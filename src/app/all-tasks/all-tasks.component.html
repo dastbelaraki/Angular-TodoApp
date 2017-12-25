@@ -4,7 +4,7 @@
   </h2>
   <ul class="list-group">
     <li *ngFor="let todo of allTasks" class="list-group-item">
-      <span class="todo-title">{{todo.title}} {{todo.complete === true? '(completed)':'(not completed)'}}</span>
+      <span class="todo-title">{{todo.title}} {{todo.complete === true? '( &#10003; completed)':'( &#x2715; not completed)'}}</span>
     </li>
   </ul>
 </div>

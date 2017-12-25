@@ -5,9 +5,9 @@ import { Todo } from './todo';
 export class TodoDataService {
 
   todos: Todo[] = [
-    { id: 1, title: 'Learn Angular', complete: true },
-    { id: 2, title: 'Play with Vue', complete: false },
-    { id: 3, title: 'Master React', complete: false },
+    { id: 1, title: 'Learn Angular', complete: true, editMode: false },
+    { id: 2, title: 'Play with Vue', complete: false, editMode: false },
+    { id: 3, title: 'Master React', complete: false, editMode: false },
   ];
 
   lastId = this.todos.length;

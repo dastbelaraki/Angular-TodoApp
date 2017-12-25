@@ -26,6 +26,18 @@ export class TodoListComponent implements OnInit {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
+  editTodo(todo: Todo) {
+    todo.editMode = true;
+  }
+
+  updateTodo(todo: Todo, editInput) {
+    const newTitle = editInput.value;
+    this.todoDataService.updateTodoById(todo.id, {
+      title: newTitle
+    });
+    todo.editMode = false;
+  }
+
   get allTasks() {
     return this.todoDataService.getAllTodos();
   }

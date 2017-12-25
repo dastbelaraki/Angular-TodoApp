@@ -14,8 +14,12 @@
       <ul class="list-group">
         <li *ngFor="let todo of incompletedTasks" class="list-group-item">
           <input (click)="toggleTodoComplete(todo)" type="checkbox" class="checkbox">
-          <span class="todo-title">{{todo.title}}</span>
-          <button (click)="removeTodo(todo)" class="btn btn-danger delete-todo">X</button>
+          <span (click)="editTodo(todo)" class="todo-title">
+            {{todo.title}}
+            <input #editInput *ngIf="todo.editMode" [value]="todo.title" (keyup.enter)="updateTodo(todo,editInput)" class="edit-todo"
+              type="text">
+          </span>
+          <button (click)="removeTodo(todo)" class="btn btn-danger delete-todo">&#x2715;</button>
         </li>
       </ul>
     </div>
@@ -27,6 +31,7 @@
       <ul class="list-group" *ngIf="completedTodos.length > 0">
         <li *ngFor="let task of completedTodos" class="list-group-item">
           <span class="todo-title">{{task.title}}</span>
+          <span (click)="toggleTodoComplete(task)" class="incomplete-todo">&#x2715;</span>
         </li>
       </ul>
     </div>
