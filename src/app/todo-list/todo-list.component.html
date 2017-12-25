@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="input-group add-control">
+    <input #newtodo [(ngModel)]="newTodo.title" (keyup.enter)="addTodo(newtodo)" class="form-control" type="text" placeholder="What needs to be done?">
+    <span class="input-group-btn">
+      <button class="btn btn-secondary" (click)="addTodo(newtodo)">Add</button>
+    </span>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="heading">
+        Todo
+      </h2>
+      <hr>
+      <ul class="list-group">
+        <li *ngFor="let todo of incompletedTasks" class="list-group-item">
+          <input (click)="toggleTodoComplete(todo)" type="checkbox" class="checkbox">
+          <span class="todo-title">{{todo.title}}</span>
+          <button (click)="removeTodo(todo)" class="btn btn-danger delete-todo">X</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2 class="heading">
+        Completed
+      </h2>
+      <hr>
+      <ul class="list-group" *ngIf="completedTodos.length > 0">
+        <li *ngFor="let task of completedTodos" class="list-group-item">
+          <span class="todo-title">{{task.title}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
