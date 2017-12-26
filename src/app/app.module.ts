@@ -9,6 +9,7 @@ import { TodoDataService } from './todo-data.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AllTasksComponent } from './all-tasks/all-tasks.component';
+import { AddTodoComponent } from './add-todo/add-todo.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AllTasksComponent } from './all-tasks/all-tasks.component';
     AppComponent,
     NavbarComponent,
     TodoListComponent,
-    AllTasksComponent
+    AllTasksComponent,
+    AddTodoComponent
   ],
   imports: [
     BrowserModule,

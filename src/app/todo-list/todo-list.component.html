@@ -1,10 +1,5 @@
 <div class="container">
-  <div class="input-group add-control">
-    <input #newtodo [(ngModel)]="newTodo.title" (keyup.enter)="addTodo(newtodo)" class="form-control" type="text" placeholder="What needs to be done?">
-    <span class="input-group-btn">
-      <button class="btn btn-secondary" (click)="addTodo(newtodo)">Add</button>
-    </span>
-  </div>
+  <app-add-todo class="app-add-todo" (add)="onAddTodo($event)"></app-add-todo>
   <div class="row">
     <div class="col-md-6">
       <h2 class="heading">

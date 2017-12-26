@@ -8,14 +8,12 @@ import { TodoDataService } from '../todo-data.service';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  newTodo: Todo = new Todo();
 
   constructor(private todoDataService: TodoDataService) {
   }
 
-  addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+  onAddTodo(todo: Todo) {
+    this.todoDataService.addTodo(todo);
   }
 
   toggleTodoComplete(todo) {
