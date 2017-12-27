@@ -1,6 +1,6 @@
 # Demo
 
-Check the <a href="https://imandb.github.io/Angular-TodoApp/">demo here</a>. 
+Check the <a target="_blank" href="https://imandb.github.io/Angular-TodoApp/">demo here</a>. 
 
 # TodoApp
 
