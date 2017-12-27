@@ -1,3 +1,7 @@
+# Demo
+
+Check the <a href="https://imandb.github.io/Angular-TodoApp/">demo here</a>. 
+
 # TodoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
