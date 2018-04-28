@@ -13,7 +13,7 @@ export class AllTasksComponent implements OnInit {
   allTasks: Todo[];
 
   ngOnInit() {
-    this.allTasks = this.todoDataService.getAllTodos();
+    // this.allTasks = this.todoDataService.getAllTodos();
   }
 
 }
