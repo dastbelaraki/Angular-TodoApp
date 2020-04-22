@@ -4,7 +4,7 @@ This Todo App is build with Angular 5, [Angular CLI](https://github.com/angular/
 
 # Demo
 
-Check the [demo here](https://imandb.github.io/Angular-TodoApp/)</a>. 
+Check the [demo here](https://dastbelaraki.github.io/Angular-TodoApp/)</a>. 
 
 ## Development server
 
