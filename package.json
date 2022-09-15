@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.2.8",
     "@angular/router": "^5.2.8",
     "angular-cli-ghpages": "^0.5.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "core-js": "^2.4.1",
     "npm": "^5.8.0",
     "rxjs": "^5.5.2",
